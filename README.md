@@ -1,30 +1,26 @@
-# ECE 252 Communication Systems Project - Spring 2025
+# Digital Communication - Part I: Line Coding Comparison
 
-This project is developed for the Analog and Digital Communication Systems course at Ain Shams University.
+This part of the project implements and compares two types of line codes using Octave:
 
-## Contents
+- **Unipolar NRZ**
+- **AMI (Bipolar NRZ)**
 
-### 📡 Analog Communication
+## Overview
 
-- Time and frequency domain analysis of signals
-- Filtering with different bandwidths
-- Frequency Division Multiplexing (FDM) with DSB-SC and SSB
-- Coherent demodulation of modulated signals
+- A 256-bit random bitstream is generated.
+- The signal is encoded using both line coding techniques.
+- Time-domain plots are created to visualize pulse shapes.
+- Frequency-domain analysis is done via FFT to study the spectrum.
 
-### 🔄 Digital Communication
+## Files
 
-- Line coding comparison (e.g., Manchester vs. NRZ)
-- Modulation and demodulation of digital signals (ASK, FSK, PSK)
-- Spectral and temporal analysis
-- Effect of receiver oscillator phase shift
-
-## Language & Tools
-
-- [Octave](https://www.gnu.org/software/octave/)
+- `part1_line_coding_comparison.m`: Main script to generate, encode, and analyze the signals.
 
 ## How to Run
 
-Each folder contains its own `.m` files. Run in Octave using:
+1. Open Octave.
+2. Navigate to the `digital` directory.
+3. Run:
 
-```bash
-octave your_script_name.m
+```octave
+part1_line_coding_comparison
